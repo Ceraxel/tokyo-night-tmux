@@ -8,10 +8,11 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 TOKYO_NIGHT="src/tokyo-night-status.conf"
-CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+TOKYONIGHT_NIGHT="src/tokyonight_night-folke.conf"
+CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 main() {
-  tmux source-file "$CURRENT_DIR/$TOKYO_NIGHT"
+  tmux source-file "$CURRENT_DIR/$TOKYONIGHT_NIGHT"
 }
 
 main
